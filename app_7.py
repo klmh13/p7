@@ -13,7 +13,7 @@ from sklearn.impute import KNNImputer
 from numpy import NaN
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import LabelEncoder
-from lime.lime_tabular import LimeTabularExplainer
+#from lime.lime_tabular import LimeTabularExplainer
 
 
 
