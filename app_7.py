@@ -13,7 +13,7 @@ from sklearn.impute import KNNImputer
 from numpy import NaN
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import LabelEncoder
-#from lime.lime_tabular import LimeTabularExplainer
+
 
 
 
@@ -177,15 +177,6 @@ else:
 encoder= LabelEncoder()
 df['accord_crédit']=encoder.fit_transform(df['accord_crédit'])
 
-
-#st.write(DF3[DF3.index==ID])
-#lime1 = LimeTabularExplainer(DF3,feature_names=DF3.columns, class_names=["Solvable", "Non Solvable"],discretize_continuous=False)
-#exp = lime1.explain_instance(DF3[DF3.index==ID],model.predict_proba,num_samples=100)#
-
-# Affichage des résultats
-#exp.show_in_notebook(show_table=False)
-#exp.as_pyplot_figure()
-#plt.tight_layout()
 
 
 st.subheader("Position du client")
