@@ -26,7 +26,7 @@ Cette application permet de prédire l'attribution de crédit bancaire selon dif
 #DATASET
 @st.cache
 def load_data():
-    path_df =(r"C:\Users\klmh\Desktop\DSOC\projet7\p7\p7\data\x_sample.csv")
+    path_df =("x_sample.csv")
     df = pd.read_csv(path_df,nrows=1000,index_col='SK_ID_CURR', encoding ='utf-8')#,index_col='SK_ID_CURR',nrows=100
     return df
 
@@ -44,7 +44,7 @@ def client(df, id):
 #MODEL
 def load_model():
         '''loading the trained model'''
-        inpt=open(r'C:\Users\klmh\Desktop\DSOC\projet7\p7\p7\data\best_model','rb')
+        inpt=open("best_model','rb')
         model=pickle.load(inpt)
         return model
 model=load_model()
