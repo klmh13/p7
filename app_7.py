@@ -227,8 +227,3 @@ if st.checkbox("Voir la situation du client sélectionné par rapport aux autres
 else:
         st.markdown("<i>…</i>", unsafe_allow_html=True)
 
-
-
-
-
-#
