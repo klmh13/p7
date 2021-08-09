@@ -44,7 +44,7 @@ def client(df, id):
 #MODEL
 def load_model():
         '''loading the trained model'''
-        inpt=open("best_model','rb')
+        inpt=open('best_model','rb')
         model=pickle.load(inpt)
         return model
 model=load_model()
