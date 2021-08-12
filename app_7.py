@@ -158,7 +158,7 @@ df['accord_crédit']=pred
 
 # DECISION D'ATTRIBUTION DE CREDIT
 st.subheader("Attribution du crédit")
-if st.checkbox("Le client est-il solvable ?"):
+if st.checkbox("Le client est-il Solvable ?"):
     p=model.predict_proba(DF3)[:,1].tolist()
     if pred[pred.index==ID]=='True':
         st.write("OUI")
